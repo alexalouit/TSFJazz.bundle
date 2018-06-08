@@ -1,7 +1,7 @@
 ART = 'art-default.jpg'
-ICON = 'icon-default.jpg'
+ICON = 'icon-default.png'
 NAME = 'TSF Jazz'
-STREAM_URL = 'http://tsfjazz.ice.infomaniak.ch:80/tsfjazz-high'
+STREAM_URL = 'https://tsfjazz.ice.infomaniak.ch:80/tsfjazz-high'
 
 ####################################################################################################
 def Start():
@@ -27,8 +27,8 @@ def CreateTrackObject(url, title, include_container=False, offset=0, **kwargs):
 		rating_key = url,
 		title = title,
 		source_title = title,
-		thumb = ICON,
-		art = ART,
+		thumb = R(ICON),
+		art = R(ART),
 		items = [
 			MediaObject(
 				parts = [
